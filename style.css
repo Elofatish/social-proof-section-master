@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Outfit&family=Poppins:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+   --Very-Dark-Magenta: hsl(300, 43%, 22%);
+   --Soft-Pink: hsl(333, 80%, 67%);
+   --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+   --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+   --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 1.5rem;
+    background-image: url(images/bg-pattern-top-desktop.svg),url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right 67vw bottom 57vh, left 60vw top -22vh;
+
+}
+main{
+    width: 1020px;
+    margin-bottom: 2rem;
+}
+.containar{
+    max-width: 100%;
+
+}
+.containar .head-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.containar .head-1 .title{
+    width: 225px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 2rem;
+    font-size: 30px;
+
+}
+.containar .head-1 .p-1{
+    color: var(--Dark-Grayish-Magenta);
+    width: 390px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+.containar .rate{
+    margin-top: 35px;
+    width: 400px;
+    align-items: flex-end;
+    margin-bottom: 35px;
+}
+.containar .rate-1{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--Very-Dark-Magenta);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    margin-bottom: 20px;
+    width: 400px;
+    padding: 20px;
+    border-radius: .5rem;
+}
+.containar .rate-mage-1{
+    margin-left: -95px;
+}
+.containar .rate-mage-2{
+    margin-left: -45px;
+}
+.containar .avatar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.containar .avatar .smith,
+.containar .avatar .robert,
+.containar .avatar .anne{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 30px 20px;
+    border-radius: 10px;
+    height: fit-content;
+
+}
+.containar .avatar img{
+    border-radius: 50%;
+    width: 50px;
+    margin-left: -60px;
+}
+.containar .avatar .smith .smith-1,
+.containar .avatar .robert .robert-1,
+.containar .avatar .anne .anna-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+.containar .avatar .title{
+    margin-left: -120px;
+    font-size: 15px;
+    color: white;
+}
+.containar .avatar .p-3{
+    margin-left: -120px;
+    color: var(--Soft-Pink);
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+.containar .avatar .robert{
+    margin-top: 30px;
+}
+.containar .avatar .anne{
+    margin-top: 60px;
+}
+.containar .avatar .p-4{
+    width: 245px;
+    line-height: 1.5;
+    color: var(--Light-Grayish-Magenta);
+    font-size: 12px;
+}
+@media (max-width:425px){
+    body{
+        background-image: url(images/bg-pattern-top-mobile.svg),url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 0 left 0, right 0 bottom 85px;
+        overflow: visible;
+    }
+    main{
+        width: 300px;
+    }
+    .containar{
+        max-width: 100%;
+    }
+    .containar .head-1{
+        flex-direction: column;
+    }
+    .containar .head-1 .title{
+        width: fit-content;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .containar .head-1 .p-1{
+        width: fit-content;
+        text-align: center;
+
+    }
+    .containar .avatar{
+        grid-template-columns: 1fr;
+    }
+    .containar .rate-mage-1,
+    .containar .rate-mage-2{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .containar .rate{
+        max-width: 100%;
+
+    }
+  .containar .rate-1 {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .containar .rate-1 .star{
+        margin-bottom: 10px;
+    }
+    .containar .avatar .smith,
+    .containar .avatar .robert,
+    .containar .avatar .anne{
+        margin-top: 20px;
+
+}
+
+   
+}
